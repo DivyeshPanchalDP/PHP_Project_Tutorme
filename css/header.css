@@ -1,0 +1,163 @@
+body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      /****************** Background image *****************/
+      .bg {
+        background-image: url("image/1.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /******************** Navbar *************************/
+      .navbar .container-fluid .navbar-brand {
+        color: aliceblue;
+        text-decoration: none;
+      }
+      .navbar .container-fluid .collapse .nav-item .nav-link {
+        color: aliceblue;
+      }
+
+      /******************** Container ****************/
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        align-items: center;
+        transform: translate(-50%, -50%);
+      }
+      .container .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .container .centered .auto-type {
+        color: cadetblue;
+      }
+      .container h1 {
+        color: aliceblue;
+      }
+      .span {
+        color: red;
+      }
+
+      /****************** Scroll Button Start *********************/
+
+      .icon-scroll {
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        width: 1em;
+        height: 3.125em;
+        transform: translateX(-50%) scale(2);
+        z-index: 99999;
+      }
+
+      .icon-arrows::after,
+      .icon-arrows::before {
+        content: "";
+      }
+      .icon-arrows span,
+      .icon-arrows::after,
+      .icon-arrows::before {
+        display: block;
+        width: 0.315em;
+        height: 0.315em;
+        border-right: 1px solid rgba(2, 1, 1, 0.8);
+        border-bottom: 1px solid rgba(2, 1, 1, 0.8);
+        margin: 0 0 0.125em 0.315em;
+        transform: rotate(45deg);
+        animation: mouse-scroll 1s infinite;
+        animation-direction: alternate;
+      }
+
+      .icon-arrows::before {
+        margin-top: 0.315em;
+        animation-delay: 0.1s;
+      }
+
+      .icon-scroll span {
+        animation-delay: 0.2s;
+      }
+
+      .icon-arrows::after {
+        animation-delay: 0.3s;
+      }
+
+      .icon-scroll .mouse {
+        height: 1.375em;
+        width: 0.875em;
+        border: 1px solid rgba(20, 17, 17, 0.8);
+        border-radius: 2em;
+      }
+
+      .icon-scroll .wheel {
+        position: relative;
+        display: block;
+        height: 0.1875em;
+        width: 0.1875em;
+        margin: 0.1875em auto 0;
+        background: rgba(3, 3, 3, 0.8);
+        animation: mouse-wheel 1.2s ease infinite;
+        border-radius: 50%;
+      }
+
+      @keyframes mouse-wheel {
+        0% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        100% {
+          opacity: 0;
+          transform: translateY(0.375em);
+        }
+      }
+
+      @keyframes mouse-scroll {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /********************** Search **********************/
+
+      .search {
+        position: relative;
+        box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+      }
+
+      .search input {
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+      }
+
+      .search input:focus {
+        box-shadow: none;
+        border: 2px solid blue;
+      }
+
+      .search .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 16px;
+      }
+
+      .search button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        background: rgb(93, 93, 111);
+      }
