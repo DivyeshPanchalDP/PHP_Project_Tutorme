@@ -163,7 +163,7 @@ html {
         <div class="card-body" style="text-align: center;">
             <img src="image/Nikhilesh.jpg" alt="Nikhilesh" style="width:75%; border-radius:25px;">
             <div class="card-footer" style="text-align: center;">
-              <h2>Nikhilesh</h2>
+              <h2>Divyesh</h2>
               <p><button class="button">Contact</button></p>
             </div>
           </div>
